@@ -28,12 +28,15 @@ body * {
   line-height: 24px;
   margin-top: 8px;
 }
+/* List-Buttons*/
 ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 24px 24px;
 }
+/* Buttons */
 ul li a {
   display: flex;
   justify-content: center;
@@ -47,7 +50,29 @@ ul li a {
   font-weight: 500;
   transition: all 0.5s;
 }
+/* pseudo-seletor */
 ul li a:hover {
   background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.05));
   border: 1.5px solid white;
+}
+
+/* Social-Links */
+#social-links {
+  display: flex;
+  justify-content: center;
+  padding: 24px 24px;
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 16px;
+  transition: background 0.5s;
+}
+
+#social-links a:hover {
+  background-color: var(--highlight-color-dark-mode, rgba(255, 255, 255, 0.2));
 }
